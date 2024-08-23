@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    position: relative; /* Ensure child elements are positioned relative to this container */
+    padding: 20px;
+    border-radius: 10px;
+}
+#hackathonContainer {
+    visibility: hidden;
+}
+/* Start Button Styles */
+#startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: fit-content;
+}
+#startButton:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+/* Countdown Container Styles */
+#countdownContainer {
+    font-size: 10rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
+    height: 10rem;
+}
+.time-unit {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 7rem;
+    width: 10rem;
+}
+.time-unit div:first-child {
+    font-size: 64px;
+    font-weight: bold;
+}
+.time-unit div:last-child {
+    font-size: 24px;
+    margin-top: 5px;
+    color: #61dafb;
+}
+
+/* Message Container Styles */
+#messageContainer {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Canvas Styles */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ensure it stays behind other elements */
+}
+
+/* Additional Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.hero-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0;
+    /* line-height: 1; */
+}
+
+.sub-hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+}
